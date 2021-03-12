@@ -14,9 +14,11 @@ public PatternMatcher(String numbers, String matchingRegExp) {
 String getNumbers() {
 	return numbers;
 }
+
 String getMatchingString() {
 	return matchingRegExp;
 }
+
 public static PatternMatcher populate(String inputString) {
 	if (inputString.startsWith("//")) {
 	    final Matcher matcher = GENERAL_REGEXP.matcher(inputString);
