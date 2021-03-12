@@ -3,7 +3,7 @@ import java.util.regex.*;
 import static java.util.Arrays.stream;
 import java.util.*;
 public class StringCalculator {
-	static int called_count=0;
+	static int called_count = 0;
 public static int Add(String numbers) {
 	called_count = called_count+1;
 	if(numbers.length()==0) {
@@ -22,7 +22,7 @@ public static int Add(String numbers) {
 	    }
 
 	    allNumbers = list.toArray(new String[list.size()]);
-	    //return Arrays.toString(allNumbers);
+	   
 	    int sum=0;
 	    String negValue="";
 	    boolean flag = true;
@@ -40,9 +40,9 @@ public static int Add(String numbers) {
         	}
         	
         }
-//        if(negValue.length()!=0) {
-//        	throw new IllegalArgumentException("negative not allowed: "+negValue);
-//        }
+        if(negValue.length()!=0) {
+        	throw new IllegalArgumentException("negative not allowed: "+negValue);
+        }
         return sum;
 	   
 	}
