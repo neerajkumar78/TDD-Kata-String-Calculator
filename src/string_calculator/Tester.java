@@ -27,5 +27,10 @@ public class Tester {
 		assertEquals(6,StringCalculator.Add("1\n2,3"));
 	}
 	
+	@Test
+	public void testDelimiterWithAnyLength() {
+		assertEquals(6,StringCalculator.Add("//[***]\n1***2***3"));
+	}
+	
 
 }
