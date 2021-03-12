@@ -32,5 +32,10 @@ public class Tester {
 		assertEquals(6,StringCalculator.Add("//[***]\n1***2***3"));
 	}
 	
+	@Test
+	public void testMultipleDelimiter() {	
+		assertEquals(6,StringCalculator.Add("//[*][%]\n1*2%3"));
+	}
+	
 
 }
