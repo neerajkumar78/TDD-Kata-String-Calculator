@@ -7,7 +7,7 @@ private static final Pattern GENERAL_REGEXP= Pattern.compile("//(.*)\n(.*)");
 private static String matchingRegExp;
 private static String numbers;
 public PatternMatcher(String numbers, String matchingRegExp) {
-	this.numbers=numbers;
+	this.numbers = numbers;
 	this.matchingRegExp=matchingRegExp;	
 }
 
@@ -16,7 +16,7 @@ String getNumbers() {
 }
 
 String getMatchingString() {
-	return matchingRegExp;
+	return Arrays.toString(matchingRegExp.split("[\\[\\]]"));
 }
 
 public static PatternMatcher populate(String inputString) {
