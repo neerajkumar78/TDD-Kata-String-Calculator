@@ -32,7 +32,7 @@ and the negative that was passed.<br/><br/>
 called public int GetCalledCount()
 that returns how many times Add() was invoked.
 &emsp;&emsp;&emsp;Remember - Start with a failing (or even non compiling) test.<br/><br/>
-&emsp;8. Numbers bigger than 1000 should be ignored, for example:
+&emsp;8. Numbers bigger than 1000 should be ignored, for example:<br/><br/>
 2 + 1001 == 2<br/><br/>
 &emsp;9. Delimiters can be of any length with the following format:
 “//[delimiter]\n”
@@ -44,4 +44,6 @@ for example
 “//[*][%]\n1*2%3” == 6.<br/><br/>
 &emsp;11. make sure you can also handle multiple delimiters with length longer than one char
 for example
-“//[**][%%]\n1**2%%3” == 6.
+“//[**][%%]\n1**2%%3” == 6.<br/><br/>
+OUTPUT<br/><br/>
+![alt text](https://github.com/neerajkumar78/TDD-Kata-String-Calculator/blob/master/image/Capture.PNG)
